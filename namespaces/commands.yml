@@ -1,0 +1,4 @@
+commands:
+ - kubectl get namespaces # get namespaces
+ - kubectl apply -f <filename.yml> # apply file.yml
+ - kubectl delete -f $1 # apply deleting file.yml
