@@ -1,0 +1,3 @@
+commands:
+ - kubectl get pods -n development # get pods by namespace
+ - kubectl describe pod <podname> -n development # describe pod and display events logs
