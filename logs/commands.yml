@@ -1,0 +1,3 @@
+commands:
+ - kubectl get pods -n development # get pods from development namespace
+ - kubectl logs <pod> -n development # get logs from pod in development namespace

@@ -1,0 +1,4 @@
+commands:
+ - kubectl apply -f .\busybox\busybox.yml # create busybox
+ - kubectl get pods -n development -o wide # show pods and their ip's in the kubernetes cluster
+ - kubectl exec -it <pod> -- /bin/sh # access the pod, with interactive terminal using sh (wget <ip>:<config_port>)

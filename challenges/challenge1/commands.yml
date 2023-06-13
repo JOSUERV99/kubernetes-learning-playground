@@ -1,0 +1,5 @@
+commands:
+ - kubectl get pods -n development
+ - kubectl apply -f quote.yml # apply/ create deployment 
+ - kubectl get pods -n development -o wide
+ - kubectl exec -it <busybox-pod-name> -- /bin/sh
