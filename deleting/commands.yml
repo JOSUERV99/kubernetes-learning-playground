@@ -1,3 +1,3 @@
 commands:
- - kubectl get deployments # get deployments
+ - kubectl delete =f <file.yml> # delete element from file
  - minikube delete # to delete your cluster
