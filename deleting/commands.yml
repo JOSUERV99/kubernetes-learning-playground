@@ -1,0 +1,3 @@
+commands:
+ - kubectl get deployments # get deployments
+ - minikube delete # to delete your cluster

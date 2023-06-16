@@ -1,3 +1,2 @@
 commands:
- - kubectl get deployments # get deployments
- - kubectl delete deployment <deployment_name> # delete deployment
+ - kubectl delete -f <file.yml> # to revert what the file does in your cluster
