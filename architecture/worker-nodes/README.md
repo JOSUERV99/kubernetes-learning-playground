@@ -1,0 +1,21 @@
+Lessons 
+
+- Worker nodes are like airplane terminals, where passengers board
+    - The cluster works with at least 3 worker nodes
+    - Where are programmed and executed, and each worker node has three components
+        - Kubelet
+            - an agent that runs on every worker node
+            - make sure that containers in a pod are running and healthy
+            - communicates directly with the API server in the control plane
+            - looking for newly assigned pods
+            - pull the image from the image repo
+        - Container runtime
+            - once the kubelet assigned to the new pod starts a container using CRI (Container Runtime Interface)
+            - enable CRI to create containers with the engines
+                - containerd
+                - CRI-O 
+                - Kata Containers
+                - AWS Firecracker
+        - Kube proxy
+            - Make sure pods and services can communicate with each other in the control plane
+            - Each proxy communicates directly with the Kubeapi server
